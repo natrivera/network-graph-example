@@ -9,6 +9,7 @@ var simulation = d3.forceSimulation()
 
 
 d3.json("data.json", function(error, graph) {
+  console.log('You are here');
   if (error) throw error;
 
   graph.links.forEach(function(d){
