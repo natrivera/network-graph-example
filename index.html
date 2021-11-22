@@ -32,7 +32,7 @@ var canvas = d3.select("#network"),
       .id(function (d) { return d.name; }));
 
 
-d3.json("data.json", function (err, graph) {
+d3.json("https://raw.githubusercontent.com/john-guerra/d3V4ForceTutorial/master/VotacionesSenado2017.json", function (err, graph) {
   if (err) throw err;
 
   simulation.nodes(graph.nodes);
